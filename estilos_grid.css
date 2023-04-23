@@ -1,17 +1,17 @@
 body {
-    background-color: green;
+  background-color: green;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
 }
 
-.container>div{
-    background-color: yellow;
-    border: 1px solid black;
-    padding: 20px;
-    text-align: center;
-    font-size: 30px;
+.container > div {
+  background-color: yellow;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
 }
