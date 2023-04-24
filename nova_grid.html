@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novo Layout de Grid com CSS - Avançado</title>
+
+    <style>
+      .item1 {
+        grid-area: header;
+        background-color: gray;
+        font-size: 30px;
+      }
+      .item2 {
+        grid-area: main;
+        background-color: green;
+        font-size: 30px;
+      }
+      .item3 {
+        grid-area: right;
+        background-color: yellow;
+        font-size: 30px;
+      }
+      .item4 {
+        grid-area: footer;
+        background-color: gray;
+        font-size: 30px;
+      }
+
+      .grid_container {
+        display: grid;
+        grid-template-areas:
+          "header header header header header header"
+          "main main main right right right"
+          "footer footer footer footer footer footer";
+        gap: 10px;
+      }
+
+      .grid_container > div {
+        padding: 60px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid_container">
+      <div class="item1">Header</div>
+      <div class="item2">Main</div>
+      <div class="item3">Right</div>
+      <div class="item4">Footer</div>
+    </div>
+  </body>
+</html>
